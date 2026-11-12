@@ -2,12 +2,14 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
+import { initNavIsland } from "./nav-island";
 
 export default function SiteHeader() {
   useEffect(() => {
+    const cleanupIsland = initNavIsland();
     const burger = document.getElementById("burger");
     const menu = document.getElementById("menu");
-    if (!burger || !menu) return;
+    if (!burger || !menu) return cleanupIsland;
 
     const onBurger = () => {
       const open = menu.classList.toggle("open");
@@ -24,6 +26,7 @@ export default function SiteHeader() {
     burger.addEventListener("click", onBurger);
     menu.addEventListener("click", onMenuClick);
     return () => {
+      cleanupIsland();
       burger.removeEventListener("click", onBurger);
       menu.removeEventListener("click", onMenuClick);
     };
@@ -51,7 +54,7 @@ export default function SiteHeader() {
             <Link href="/insights">Insights</Link>
           </nav>
           <Link className="btn btn-navy" href="/contact">
-            Book a call <span className="arr">↗</span>
+            Share Your Requirement <span className="arr">↗</span>
           </Link>
           <button
             className="burger"

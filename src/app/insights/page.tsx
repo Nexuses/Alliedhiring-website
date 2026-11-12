@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import "../about/about.css";
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function InsightsPage() {
           </div>
         </section>
       </main>
+      <SiteFooter />
     </>
   );
 }
