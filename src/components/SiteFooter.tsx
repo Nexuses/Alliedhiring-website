@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export default function SiteFooter() {
   return (
     <footer>
       <div className="wrap">
         <div className="ft">
           <div className="ft-card">
-            <a href="/" className="logo" aria-label="Allied Hiring">
+            <Link href="/" className="logo" aria-label="Allied Hiring">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/logo-footer.png"
@@ -12,12 +14,12 @@ export default function SiteFooter() {
                 width={120}
                 height={38}
               />
-            </a>
+            </Link>
             <h3>Build your India team without the detour.</h3>
-            <a className="ft-btn" href="/contact">
+            <Link className="ft-btn" href="/contact">
               <span>Book a call</span>
               <span>↗</span>
-            </a>
+            </Link>
           </div>
           <div className="ft-r">
             <div className="ft-grid">
@@ -25,19 +27,19 @@ export default function SiteFooter() {
                 <h4>Main pages</h4>
                 <ul>
                   <li>
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <a href="/about">About us</a>
+                    <Link href="/about">About us</Link>
                   </li>
                   <li>
-                    <a href="/#services">Services</a>
+                    <Link href="/#services">Services</Link>
                   </li>
                   <li>
-                    <a href="/insights">Insights</a>
+                    <Link href="/insights">Insights</Link>
                   </li>
                   <li>
-                    <a href="/contact">Contact</a>
+                    <Link href="/contact">Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -45,19 +47,19 @@ export default function SiteFooter() {
                 <h4>Explore</h4>
                 <ul>
                   <li>
-                    <a href="/#why">Why Allied</a>
+                    <Link href="/#why">Why Allied</Link>
                   </li>
                   <li>
-                    <a href="/#process">How it works</a>
+                    <Link href="/#process">How it works</Link>
                   </li>
                   <li>
-                    <a href="/#talent">Talent</a>
+                    <Link href="/#talent">Talent</Link>
                   </li>
                   <li>
-                    <a href="/#billing">Billing</a>
+                    <Link href="/#billing">Billing</Link>
                   </li>
                   <li>
-                    <a href="/#results">Case study</a>
+                    <Link href="/#results">Case study</Link>
                   </li>
                 </ul>
               </div>
