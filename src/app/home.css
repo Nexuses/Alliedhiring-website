@@ -353,7 +353,7 @@ header.nav.scrolled .burger{justify-self:end;margin-right:8px}
 .bill-note b{letter-spacing:.1em;font-size:12px;display:block;margin-bottom:4px}
 
 /* results */
-.res{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:20px}
+.res{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:28px}
 .res .quote{background:#fff;border:1px solid var(--border);border-radius:24px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
 .quote q{font-size:20px;line-height:1.4;color:var(--navy);quotes:none;font-weight:500}
 .who{display:flex;gap:12px;align-items:center}
@@ -362,10 +362,10 @@ header.nav.scrolled .burger{justify-self:end;margin-right:8px}
 .res .big{background:var(--lime);border-radius:24px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;min-height:300px}
 .res .big .n{font-size:clamp(60px,8vw,104px);font-weight:500;letter-spacing:-.05em;line-height:1}
 .res .big p{color:var(--navy);font-weight:500}
-.res .side{display:grid;gap:20px}
+.res .side{display:grid;gap:28px}
 .res .side div{background:var(--navy);color:#fff;border-radius:24px;padding:28px}
 .res .side b{font-size:40px;color:var(--lime);font-weight:500;letter-spacing:-.03em;display:block}
-.case{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.case{margin-top:20px;margin-bottom:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .case div{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:22px;font-size:15px}
 .case b{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.12em;color:var(--lime-deep);margin-bottom:10px}
 .cs-ic{width:34px;height:34px;border-radius:10px;background:var(--lime-tint);display:grid;place-items:center;flex:none}
