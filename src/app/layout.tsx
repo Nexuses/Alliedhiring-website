@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="js" suppressHydrationWarning>
       <body className={figtree.className}>{children}</body>
     </html>
   );
